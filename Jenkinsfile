@@ -6,6 +6,9 @@ pipeline {
     }
     environment{
         Cource = "Jenkins"
+    }
+    options{
+        disableConcurrentBuilds()
     } 
     stages {
         stage('Build') {
